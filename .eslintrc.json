@@ -38,6 +38,7 @@
     "comma-dangle": "off",
     "comma-spacing": ["error", { "before": false, "after": true }],
     "prefer-template": "off",
+    "import/no-extraneous-dependencies": "off",
     "max-len": [
       "error",
       {
