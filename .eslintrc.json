@@ -17,6 +17,7 @@
     "implicit-arrow-linebreak": "off",
     "function-paren-newline": "off",
     "import/prefer-default-export": "off",
+    "arrow-parens": "off",
     "semi-spacing": [
       "error",
       {
@@ -33,22 +34,7 @@
         "allowTemplateLiterals": true
       }
     ],
-    "keyword-spacing": [
-      "error",
-      {
-        "overrides": {
-          "if": {
-            "after": false
-          },
-          "for": {
-            "after": false
-          },
-          "while": {
-            "after": false
-          }
-        }
-      }
-    ],
+    "keyword-spacing": "error",
     "comma-dangle": "off",
     "comma-spacing": ["error", { "before": false, "after": true }],
     "prefer-template": "off",
