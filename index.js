@@ -20,15 +20,18 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: {
-    models
+    models,
+    user: {
+      id: 1
+    }
   }
 });
 
 server.applyMiddleware({ app });
 
 models.sequelize.sync({ logging: false }).then(() => {
-  app.listen({ port: 4001 }, () =>
+  app.listen({ port: 4000 }, () =>
     // no eslint
-    console.log(`🚀 Server ready at http://localhost:4001${server.graphqlPath}`)
+    console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
   );
 });
