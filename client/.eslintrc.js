@@ -1,5 +1,6 @@
 module.exports = {
   extends: 'airbnb',
+  parser: 'babel-eslint',
   env: {
     browser: true
   },
@@ -10,6 +11,10 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'arrow-body-style': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'comma-dangle': 'off'
+    'react/forbid-prop-types': 0,
+    'comma-dangle': 'off',
+    'arrow-parens': 0,
+    'react/no-find-dom-node': 0,
+    'react/no-unused-state': 0
   }
 };
