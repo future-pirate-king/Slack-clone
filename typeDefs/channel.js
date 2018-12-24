@@ -8,4 +8,8 @@ export default gql`
     messages: [Message!]!
     users: [User!]!
   }
+
+  type Mutation {
+    createChannel(teamId: ID!, name: String!, public: Boolean = false): Boolean!
+  }
 `;
