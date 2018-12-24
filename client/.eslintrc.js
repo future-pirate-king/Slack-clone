@@ -5,6 +5,11 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': ['.js', '.jsx'],
-    'react/prefer-stateless-function': 'off'
+    'react/prefer-stateless-function': 'off',
+    'linebreak-style': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'arrow-body-style': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'comma-dangle': 'off'
   }
 };
